@@ -13,7 +13,11 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <p class="mb-4">
+        Bienvenidos a mi Super Calculadora😎.... Diseñada por Samuel D.
+      </p>
+    </header>
 
     <nav></nav>
 
@@ -21,28 +25,40 @@
       <form action="">
         <div class="container">
           <div class="form-group">
-            <label for="num1">num 1</label>
+            <label for="num1"></label>
             <input
               class="form-control"
               id="num1"
               name="num1"
               type="number"
               required
+              placeholder="Ingrese el primer numero aqui"
             />
-            <label for="num2">num 2</label>
+            <label for="num2"></label>
             <input
               class="form-control"
               id="num2"
               name="num2"
               type="number"
               required
+              placeholder="Ingrese el segundo numero aqui"
             />
           </div>
-          <button class="btn btn-primary mt-3" id="submit">Button</button>
+          <p class="mt-5">Seleccione la operación matematica:</p>
+          <button class="btn btn-primary" id="sumar">Sumar</button>
+          <button class="btn btn-secondary" id="restar">Restar</button>
+          <button class="btn btn-danger" id="multiplicar">Multiplicar</button>
+          <button class="btn btn-warning" id="dividir">Dividir</button>
         </div>
       </form>
 
-      <div id="resultado"></div>
+      <div class="mt-4 container">
+        Resultado:
+        <div
+          id="resultado"
+          class="display-3 border-2 rounded bg-info p-4"
+        ></div>
+      </div>
     </main>
 
     <footer></footer>
